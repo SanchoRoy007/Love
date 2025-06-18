@@ -59,7 +59,7 @@ function animate() {
 }
 animate();
 
-// Random love messages
+// Random love messages with typing
 const messages = [
   "You're my sunshine on cloudy days ☀️",
   "Your strength amazes me every day 💪",
@@ -91,4 +91,14 @@ function openPopup() {
 
 function closePopup() {
   document.getElementById("popup").style.display = "none";
+}
+
+// Music play trigger
+function startMusic() {
+  const music = document.getElementById("bgMusic");
+  music.play().then(() => {
+    document.getElementById("playMusicBtn").style.display = "none";
+  }).catch(err => {
+    alert("Click the button to enable background music 🎶");
+  });
 }
