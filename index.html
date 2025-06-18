@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Love ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bgMusic" autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="container">
+    <h1 id="typewriter"></h1>
+    <p class="message">
+      I know you're going through a tough time right now... but I'm always here for you. ❤️
+    </p>
+    <button onclick="showLoveMessage()">💌 Show me some love</button>
+    <p id="loveText"></p>
+    <button onclick="openPopup()">🌹 Click for a Special Note</button>
+  </div>
+
+  <canvas id="heartCanvas"></canvas>
+
+  <!-- Pop-up Modal -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>To My Love 💖</h2>
+      <p>
+        You're stronger than your pain and more beautiful than you know.  
+        I wish I could hold your hand right now and say — I love you, always and forever.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
